@@ -1,6 +1,15 @@
 import L from "leaflet";
 import { html, makeComponent } from './makeComponent.js';
 
+// Helper function to format club names
+const formatClubName = (name) => {
+  return name
+    .replace("#counterspell-", "") // Remove the prefix
+    .split('-')                    // Split the name by '-'
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize each word
+    .join(' ');                    // Join the words with a space
+};
+
 const clubLocations = [
   { name: "#counterspell-melbourne", coords: [-37.8136, 144.9631] },
   { name: "#counterspell-perth", coords: [-31.9505, 115.8605] },
@@ -81,7 +90,7 @@ const onConnected = host => {
       });
 
       let marker = new L.marker(coords, { icon }).addTo(map);
-      marker.bindPopup(`<b>${name}</b>`);
+      marker.bindPopup(`<b>Counterspell ${formatClubName(name)}</b>`);
   });
 }
 
