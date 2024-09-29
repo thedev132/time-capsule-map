@@ -71,12 +71,12 @@ const onConnected = host => {
   clubLocations.forEach(({ name, coords }) => {
       const style = `
         transform-origin: left top;
-        height: 20px;
+        height: 25px;
         border-radius: 50%;
       `;
 
       const icon = new L.divIcon({
-        html: `<img style="${style}" src="https://assets.hackclub.com/icon-rounded.png"/>`,
+        html: `<img style="${style}" src="./public/icon.png"/>`,
         className: "clear"
       });
 
