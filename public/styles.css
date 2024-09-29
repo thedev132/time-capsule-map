@@ -34,9 +34,9 @@ body {
   background: #000 !important;
 }
 .flag {
-  background-image: url(https://assets.hackclub.com/flag-orpheus-top.svg);
+  background-image: url('./logo.png');
   position: absolute; 
-  top: 0; 
+  top: 10px; 
   left: 10px; 
   border: 0; 
   width: 112px; 
@@ -64,30 +64,3 @@ body {
   }
 }
 
-.flag:hover,.flag:focus {
-  -webkit-animation: animation-flag 0.5s linear infinite alternate;
-  animation: animation-flag 0.5s linear infinite alternate;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .flag {
-    -webkit-animation: none!important;
-    animation: none!important;
-  }
-}
-
-@keyframes animation-flag {
-  from {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  to {
-    -webkit-transform: rotate(-5deg);
-    -moz-transform: rotate(-5deg);
-    -ms-transform: rotate(-5deg);
-    transform: rotate(-5deg);
-  }
-}
