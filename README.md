@@ -1,6 +1,6 @@
-# Hack Club Clubs Map
+# Hack Club Counterspell Map
 
-Club map data is pulled from our Airtable bases. Using [uhtml](https://github.com/WebReflection/uhtml) for rendering and a custom helper to make web-components. Helper can be found in "makeComponent.js". Example usage of helper is in "club-map.js". If you're interested in contributing reach out to @leo on Slack or just get at it.
+Counterspell map data is pulled from the canvas on slack. Using [uhtml](https://github.com/WebReflection/uhtml) for rendering and a custom helper to make web-components. Helper can be found in "makeComponent.js". Example usage of helper is in "club-map.js". If you're interested in contributing reach out to @leo on Slack or just get at it.
 
 ## Development
 
