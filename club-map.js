@@ -85,7 +85,7 @@ const onConnected = host => {
       `;
 
       const icon = new L.divIcon({
-        html: `<img style="${style}" src="./public/icon.png"/>`,
+        html: `<img style="${style}" src="https://cloud-5ugyen9o7-hack-club-bot.vercel.app/0untitled_design__13_.png"/>`,
         className: "clear"
       });
 
