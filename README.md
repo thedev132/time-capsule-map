@@ -7,7 +7,7 @@ Counterspell map data is pulled from the canvas on slack. Using [uhtml](https://
 Clone the repository:
 
 ```
-git clone https://github.com/hackclub/map && cd map
+git clone https://github.com/emergenitro/counterspell-map && cd counterspell-map
 ```
 
 Install dependencies:
