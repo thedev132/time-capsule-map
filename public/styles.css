@@ -34,7 +34,6 @@ body {
   background: #000 !important;
 }
 .flag {
-  background-image: url('./logo.png');
   position: absolute; 
   top: 10px; 
   left: 10px; 
@@ -56,6 +55,18 @@ body {
   transition: 0.1875s cubic-bezier(0.375, 0, 0.675, 1) transform;
   transform-origin: top left;
 }
+
+#journey-list {
+  display: block; /* List is visible by default */
+  transition: max-height 0.3s ease-out;
+  max-height: 400px;
+  margin-right: 30;
+}
+
+#journey-list.collapsed {
+  display: none;
+}
+
 
 @media (min-width: 48em) {
   .flag {
